@@ -7,7 +7,8 @@ tuples
 switch  
 Singleton class  
 RESTful Web Services Methods  
-Yahoo! Query Language (YQL)  
+Yahoo! Query Language (YQL)   
+Yahoo! Finance API   
 JSON data  
 
 Built following along Mario Eguiluz’s app tutorial from:  
