@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftStocks" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Gz-5Z-pHL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="53"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="Cid-De-Zbj"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Upf-nL-hFc">
+                                <rect key="frame" x="0.0" y="53" width="600" height="547"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="gGW-VI-5ew"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="e8W-4u-16B"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Gz-5Z-pHL" secondAttribute="trailing" constant="-20" id="4ol-cm-myL"/>
+                            <constraint firstItem="3Gz-5Z-pHL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="7Mt-k7-zu7"/>
+                            <constraint firstItem="3Gz-5Z-pHL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="cPA-V0-79e"/>
+                            <constraint firstItem="Upf-nL-hFc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="oOL-2e-5J6"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Upf-nL-hFc" secondAttribute="bottom" id="qHD-vs-AtT"/>
+                            <constraint firstItem="Upf-nL-hFc" firstAttribute="top" secondItem="3Gz-5Z-pHL" secondAttribute="bottom" id="wZ3-55-YMY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Upf-nL-hFc" secondAttribute="trailing" constant="-20" id="y1S-wZ-2q5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Upf-nL-hFc" id="PhT-uO-qev"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440" y="357"/>
+        </scene>
+    </scenes>
+</document>
