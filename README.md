@@ -1,6 +1,6 @@
 # SwiftStocks
 Basic stock basket application - which shows daily percentage change in
-stock prices in basket.
+stock prices of a basket of stocks.
 
 App uses:  
 tuples  
